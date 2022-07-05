@@ -13,7 +13,7 @@
 }
 
 .main-container {
-	background-image: url("../images/morning.jpg");
+	background-image: url("/images/morning.jpg");
 	background-size:cover;
 	display: flex;
 	flex-flow: column nowrap;
