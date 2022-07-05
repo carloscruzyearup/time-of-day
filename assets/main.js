@@ -67,22 +67,22 @@ day.innerText = dayofweek[time.getDay()];
 switch( true ) {
 	case ( time.getHours() >= evening.getHours() ):
 	case ( time.getHours() < night.getHours() ):
-		main.style = "background-image: url('../images/night.jpg')"
+		main.style = "background-image: url('/images/night.jpg')"
 		timeMsg.innerText = "Good night!";
 		timeMsg.style = "color: #00134B"
 		break;
 	case ( time.getHours() < morning.getHours() ):
-		main.style = "background-image: url('../images/morning.jpg')"
+		main.style = "background-image: url('/images/morning.jpg')"
 		timeMsg.innerText = "Good morning!";
 		timeMsg.style = "color: #DE8964"
 		break;
 	case ( time.getHours() < afternoon.getHours() ):
-		main.style = "background-image: url('../images/afternoon.jpg')"
+		main.style = "background-image: url('/images/afternoon.jpg')"
 		timeMsg.innerText = "Good afternoon!";
 		timeMsg.style = "color: #838300"
 		break;
 	case ( time.getHours() < evening.getHours() ):
-		main.style = "background-image: url('../images/evening.jpg')"
+		main.style = "background-image: url('/images/evening.jpg')"
 		timeMsg.innerText = "Good evening!";
 		timeMsg.style = "color: #B16198"
 		break;
