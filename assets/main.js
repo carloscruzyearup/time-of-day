@@ -43,7 +43,7 @@ let month = [
 	"December"
 ];
 
-document.getElementById("hour").innerText = `${time.getHours()%12}:${time.getMinutes() < 10 ? `0${time.getMinutes()}` : time.getMinutes()} ${(time.getHours() > 12 ? 'PM' : 'AM')}`
+document.getElementById("hour").innerText = `${time.getHours()%12}:${time.getMinutes() < 10 ? `0${time.getMinutes()}` : time.getMinutes()} ${(time.getHours() > 12 ? 'PM' : 'AM')}`;
 document.getElementById("month").innerText = month[time.getMonth()] + " ";
 
 let suffix;
@@ -67,24 +67,24 @@ day.innerText = dayofweek[time.getDay()];
 switch( true ) {
 	case ( time.getHours() >= evening.getHours() ):
 	case ( time.getHours() < night.getHours() ):
-		main.style = "background-image: url('/images/night.jpg')"
+		main.style.backgroundImage = "url('images/night.jpg')";
 		timeMsg.innerText = "Good night!";
-		timeMsg.style = "color: #00134B"
+		timeMsg.style = "color: #00134B";
 		break;
 	case ( time.getHours() < morning.getHours() ):
-		main.style = "background-image: url('/images/morning.jpg')"
+		main.style.backgroundImage = "url('images/morning.jpg')";
 		timeMsg.innerText = "Good morning!";
 		timeMsg.style = "color: #DE8964"
 		break;
 	case ( time.getHours() < afternoon.getHours() ):
-		main.style = "background-image: url('/images/afternoon.jpg')"
+		main.style.backgroundImage = "url('images/afternoon.jpg')";
 		timeMsg.innerText = "Good afternoon!";
-		timeMsg.style = "color: #838300"
+		timeMsg.style = "color: #838300";
 		break;
 	case ( time.getHours() < evening.getHours() ):
-		main.style = "background-image: url('/images/evening.jpg')"
+		main.style.backgroundImage = "url('images/evening.jpg')";
 		timeMsg.innerText = "Good evening!";
-		timeMsg.style = "color: #B16198"
+		timeMsg.style = "color: #B16198";
 		break;
 	default:
 		break;
